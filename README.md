@@ -11,8 +11,8 @@ The reason for putting together REnPortable was to have a complete, portable R e
 ## Getting started
 1. The size of the 64-bit versions of R, RStudio, and Rtools together is approximately 1.1 GB. If you want to add other R packages you will need room for these too. For example, RStan plus dependencies adds another 350 MB (total ~1.5 GB on disk). You could save 500 MB by excluding Rtools but REnPortable has not been tested with out Rtools and RStan will not work without Rtools.
 1. You can download the REnPortable zip file and unzip to any place on a Windows 64-bit machine, USB, or external drive. 
-1. If you have installed 64-bit versions of R, Rtools, or RStudio, you can copy the files into the appropriate folders in the Apps directory (see Folder structure below).
-1. If you do not have installed 64-bit versions of R and Rtools you will need to install them (choose to install the 64-bit versions only), copy the program files to the correct folders in REnPortable and then uninstall R and Rtools. RStudio Desktop can be downloaded as a zip file and expanded in the appropriate RStudio folder.
+1. If you have installed 64-bit versions of R, Rtools, or RStudio, you can copy the program files for each into the appropriate folders in the Apps directory (see Folder structure below).
+1. If you have not installed 64-bit versions of R and Rtools you will need to install them (choose to install the 64-bit versions only), copy the program files to the correct folders in REnPortable and then uninstall R and Rtools. RStudio Desktop can be downloaded as a zip file and unzipped into the appropriate RStudio folder.
 1. Launch REnPortable.exe
 
 **Note:** Every time you start REnPortable, RStudio will ask you for the version of R you wish to use. Please select the version of R that is in `...\REnPortable\App\Rbase` (see below); if you do not have R installed, this should be the only version listed. This is a behaviour of RStudio and cannot be change (AFAIK).
