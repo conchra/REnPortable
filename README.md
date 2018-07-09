@@ -23,6 +23,7 @@ The reason for putting together REnPortable was to have a complete, portable R e
 1. **Rbase** where to put the R program files (and updated versions of R)
 1. **RStudio** where to put the RStudio program files (and updated versions of RStudio)
 1. **Rtools** where to put the Rtools program files (and updated versions of Rtools)
+
 This what the correct App folder structure should look like:
 
 ![App folder structure](./REnPortableAppFolder.png)
