@@ -27,6 +27,7 @@ The reason for putting together REnPortable was to have a complete, portable R e
 This what the correct App folder structure should look like:
 
 ![App folder structure](./REnPortableAppFolder.png)
+
 ### Data
 1. **R** various R files that are copied to your Windows profile under `\Users\[username]\AppData\Roaming\R` when you start REnPortable and then deleted when you close REnPortable
 1. **RBase** copy of the `Renviron.site` file that tells R where the working directory and user library are located, edit at your own risk
@@ -36,5 +37,6 @@ This what the correct App folder structure should look like:
 1. **RStudio-Desktop** various RStudio files that are copied to your Windows profile under `\Users\[username]\AppData\Local\RStudio-Desktop` when you start REnPortable and then deleted when you close REnPortable
 1. **Settings** a registry file to tell RStudio where to find R (added on start and deleted on close) and a file that has the previous place REnPortable was run from (required to maintain portability)
 1. **Temp** temporary files for R/RStudio (I haven't seen anything saved there yet but who knows?)
+
 ### Other
-1. Various files for portability, there is no reason to edit these unless you know what you are doing
+Various files for portability, there is no reason to edit these unless you know what you are doing
