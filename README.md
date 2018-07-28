@@ -4,7 +4,7 @@ A portable R environment for Windows
 ## Introduction
 REnPortable is a portable 64-bit R environment for Windows. It was put together using the [PortableApps.com](https://portableapps.com) launcher but is not endorsed by and does not comply with PortableApps.com requirements.
 
-Please note that to use REnPortable you need to supply your own 64-bit copy of [R(base)](https://cloud.r-project.org/), [Rtools](https://cloud.r-project.org/), [RStudio](https://www.rstudio.com/products/rstudio/download/) (Open Source Edition). REnPortable was tested with R v3.5.1, Rtools v3.4, and RStudio Desktop Open Source v1.1.453 on a Windows 10 (x64) machine. No support is offered for any of these programs -- please use the relevant support pages.
+Please note that to use REnPortable you need to supply your own 64-bit copy of [R(base)](https://cloud.r-project.org/), [Rtools](https://cloud.r-project.org/), [RStudio](https://www.rstudio.com/products/rstudio/download/) (Open Source Edition). REnPortable was tested with R v3.5.1, Rtools v3.4, and RStudio Desktop Open Source v1.1.453 & v1.1.456 on a Windows 10 (x64) machine. No support is offered for any of these programs -- please use the relevant support pages.
 
 The reason for putting together REnPortable was to have a complete, portable R environment to learn R and [RStan](http://mc-stan.org/). Therefore, all the preliminary work is complete to install the [RStan for Windows](https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows) packages into REnPortable. 
 
@@ -32,9 +32,9 @@ This what the correct App folder structure should look like:
 
 ### Data
 1. **R** – various R files that are copied to your Windows profile under `\Users\[username]\AppData\Roaming\R` when you start REnPortable and then deleted when you close REnPortable.
-1. **RBase** – copy of the `Renviron.site` file that tells R where the working directory and user library are located, edit at your own risk.
+1. **RBase** – copy of the `Renviron.site` file that tells R where the working directory and user library are located, edit at your own risk. This folder structure was used in case there are further preference files or other requirements later.
 1. **RData** – the working directory\folder for R and RStudio, e.g. `R_USER` and `HOME`.
-1. **RLibrary** – R packages are added to this folder to separate them from the main R program, i.e. `R_LIBS_USER`. If you install RStan, this is where the files will be saved rather than under `\App\R`. This means that R(base) can be updated independently of any packages you add.
+1. **RLibrary** – Contributed R packages are saved to this folder (i.e. `R_LIBS_USER`) to separate them from the R program. If you install RStan, this is where the files will be saved rather than under `\App\Rbase`. It means that R(base) can be updated independently of any contributed packages you add.
 1. **RStudio** – various RStudio preference files are copied to your Windows profile under `\Users\[username]\AppData\Roaming\RStudio` when you start REnPortable and then deleted when you close REnPortable.
 1. **RStudio-Desktop** – various RStudio preference files are copied to your Windows profile under `\Users\[username]\AppData\Local\RStudio-Desktop` when you start REnPortable and then deleted when you close REnPortable.
 1. **Settings** – a registry file to tell RStudio where to find R (added on start and deleted on close) and a file that contains the previous place REnPortable was launched from (required to maintain portability).
@@ -49,4 +49,4 @@ If you have copied the program files for R, Rtools, and RStudio into the correct
 1. You do NOT need to anything under the two headings below because it has already been done for you.
     - [Configuration](https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows#configuration).
     - [Optional configuration](https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows#optional-configuration).
-1. You can really start at [Installing RStan](https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows#installing-rstan).
+1. You can really start at [Installing RStan](https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows#installing-rstan) but open REnPortable rather than R or RStudio.
