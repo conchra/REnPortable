@@ -9,7 +9,7 @@ Please note that to use REnPortable you need to supply your own 64-bit copy of [
 The reason for putting together REnPortable was to have a complete, portable R environment to learn R and [RStan](http://mc-stan.org/). Therefore, all the preliminary work is complete to install the [RStan for Windows](https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows) packages into REnPortable. 
 
 ## Getting started
-1. The size of the 64-bit versions of R, RStudio, and Rtools together is approximately 1.1 GB. If you want to add other R packages you will need room for these too. For example, RStan plus dependencies adds another 350 MB (total ~1.5 GB on disk). You could save 500 MB by excluding Rtools but REnPortable has not been tested with out Rtools and RStan will not work without Rtools.
+1. The size of the 64-bit versions of R, RStudio, and Rtools together is approximately 1.1 GB. If you want to add other R packages you will need room for these too. For example, RStan plus dependencies adds another 350 MB (total ~1.5 GB on disk). You could save 500 MB by excluding Rtools but REnPortable has not been tested without Rtools and RStan will not work without Rtools.
 1. You can download the REnPortable zip file and unzip to any place on a Windows 64-bit machine, USB, or external drive. 
 1. If you have installed 64-bit versions of R, Rtools, or RStudio, you can copy the program files for each into the appropriate folders in the Apps directory (see Folder structure below).
 1. If you have not installed 64-bit versions of R and Rtools you will need to install them (choose to install the 64-bit versions only), copy the program files to the correct folders in REnPortable and then uninstall R and Rtools. RStudio Desktop can be downloaded as a zip file and unzipped into the appropriate RStudio folder.
@@ -17,26 +17,36 @@ The reason for putting together REnPortable was to have a complete, portable R e
 
 **Note:** Every time you start REnPortable, RStudio will ask you for the version of R you wish to use. Please select the version of R that is in `...\REnPortable\App\Rbase` (see below); if you do not have R installed, this should be the only version listed. This is a behaviour of RStudio and cannot be change (AFAIK).
 
+**Note:** When it is time to update R(base), Rtools, and RStudio program files, it is usually best to delete the old files first and then copy/paste the new ones to prevent old, unused files or versions of files from causing problems.
+
 ## Folder structure
 ### App
-1. **AppInfo** files for portability of REnPortable, there is no reason to edit these unless you know what you are doing
-1. **Rbase** where to put the R program files (and updated versions of R)
-1. **RStudio** where to put the RStudio program files (and updated versions of RStudio)
-1. **Rtools** where to put the Rtools program files (and updated versions of Rtools)
+1. **AppInfo** – files for portability of REnPortable, there is no reason to edit these unless you know what you are doing.
+1. **Rbase** – where to put the R(base) program files (and updated versions of R). Updated R base packages are saved here.
+1. **RStudio** – where to put the RStudio program files (and updated versions of RStudio).
+1. **Rtools** – where to put the Rtools program files (and updated versions of Rtools).
 
 This what the correct App folder structure should look like:
 
 ![App folder structure](./REnPortableAppFolder.png)
 
 ### Data
-1. **R** various R files that are copied to your Windows profile under `\Users\[username]\AppData\Roaming\R` when you start REnPortable and then deleted when you close REnPortable
-1. **RBase** copy of the `Renviron.site` file that tells R where the working directory and user library are located, edit at your own risk
-1. **RData** the working directory\folder for R and RStudio, e.g. `R_USER` and `HOME`
-1. **RLibrary** R packages are added to this folder to separate them from the main R program, i.e. `R_LIBS_USER`
-1. **RStudio** various RStudio files that are copied to your Windows profile under `\Users\[username]\AppData\Roaming\RStudio` when you start REnPortable and then deleted when you close REnPortable
-1. **RStudio-Desktop** various RStudio files that are copied to your Windows profile under `\Users\[username]\AppData\Local\RStudio-Desktop` when you start REnPortable and then deleted when you close REnPortable
-1. **Settings** a registry file to tell RStudio where to find R (added on start and deleted on close) and a file that has the previous place REnPortable was run from (required to maintain portability)
-1. **Temp** temporary files for R/RStudio (I haven't seen anything saved there yet but who knows?)
+1. **R** – various R files that are copied to your Windows profile under `\Users\[username]\AppData\Roaming\R` when you start REnPortable and then deleted when you close REnPortable.
+1. **RBase** – copy of the `Renviron.site` file that tells R where the working directory and user library are located, edit at your own risk.
+1. **RData** – the working directory\folder for R and RStudio, e.g. `R_USER` and `HOME`.
+1. **RLibrary** – R packages are added to this folder to separate them from the main R program, i.e. `R_LIBS_USER`. If you install RStan, this is where the files will be saved rather than under `\App\R`. This means that R(base) can be updated independently of any packages you add.
+1. **RStudio** – various RStudio preference files are copied to your Windows profile under `\Users\[username]\AppData\Roaming\RStudio` when you start REnPortable and then deleted when you close REnPortable.
+1. **RStudio-Desktop** – various RStudio preference files are copied to your Windows profile under `\Users\[username]\AppData\Local\RStudio-Desktop` when you start REnPortable and then deleted when you close REnPortable.
+1. **Settings** – a registry file to tell RStudio where to find R (added on start and deleted on close) and a file that contains the previous place REnPortable was launched from (required to maintain portability).
+1. **Temp** – temporary files for R/RStudio (I haven't seen anything saved there yet but who knows?).
 
 ### Other
-Various files for portability, there is no reason to edit these unless you know what you are doing
+Various files for portability, there is no reason to edit these unless you know what you are doing.
+
+## Install RStan
+If you have copied the program files for R, Rtools, and RStudio into the correct folders, then most of the instructions for getting [RStan for Windows](https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows) up and running do not needed to be followed.
+1. You can, if you wish, [verify that Rtools can be used in R](https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows#verify-that-rtools-can-be-used-in-r).
+1. You do NOT need to anything under the two headings below because it has already been done for you.
+    - [Configuration](https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows#configuration).
+    - [Optional configuration](https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows#optional-configuration).
+1. You can really start at [Installing RStan](https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows#installing-rstan).
