@@ -40,7 +40,7 @@ The reason for putting together REnPortable was to have a complete, portable R e
    1. **Roaming**
        - **R** - For rsconnect. Copied to your profile under `\Users\[username]\AppData\Roaming\R` when REnPortable starts and then copied back when close REnPortable closes.
        - **RStudio** - RStudio preferences. Copied to your profile under `\Users\[username]\AppData\Roaming\R` when REnPortable starts and then copied back when close REnPortable closes. The file `rstudio-prefs.json` includes the initial working directory for RStudio which is set to `\Data\RData\` in REnPortable.
-   1. **Temp** – Temporary files for R/RStudio (I haven't seen anything saved there yet but who knows?).
+1. **Temp** – Temporary files for R/RStudio (I haven't seen anything saved there yet but who knows?).
 
 ### Other
 Various files for portability, there is no reason to edit these unless you know what you are doing.
