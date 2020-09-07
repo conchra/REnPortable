@@ -21,15 +21,15 @@ The reason for putting together REnPortable was to have a complete, portable R e
 
 ## Folder structure
 ### App
-1. **AppInfo** – files for portability of REnPortable, there is no reason to edit these unless you know what you are doing.
-1. **CmdStan** - unpack [CmdStan](https://mc-stan.org/users/interfaces/cmdstan.html) here before building.
-1. **Rbase** – where to put the R(base) program files (and updated versions of R). Updated R base packages are saved here.
-1. **RStudio** – where to put the RStudio program files (and updated versions of RStudio).
-1. **Rtools** – where to put the Rtools program files (and updated versions of Rtools).
-1. **TinyTex** - for [TinyTex](https://yihui.org/tinytex/) files.
+1. **AppInfo** – Files for portability of REnPortable, there is no reason to edit these unless you know what you are doing.
+1. **CmdStan** - Unpack [CmdStan](https://mc-stan.org/users/interfaces/cmdstan.html) here before building.
+1. **Rbase** – Where to put the R(base) program files (and updated versions of R). Updated R base packages are saved here.
+1. **RStudio** – Where to put the RStudio program files (and updated versions of RStudio).
+1. **Rtools** – Where to put the Rtools program files (and updated versions of Rtools).
+1. **TinyTex** - For [TinyTex](https://yihui.org/tinytex/) files.
 
 ### Data
-1. **RData** – the working directory\folder for R and RStudio, e.g. `R_USER` and `HOME`.
+1. **RData** – The working directory\folder for R and RStudio, e.g. `R_USER` and `HOME`.
 1. **RLibrary** – Contributed R packages are saved to this folder (i.e. `R_LIBS_USER`) to separate them from the R program. If you install RStan, this is where the files will be saved rather than under `\App\Rbase`. It means that R(base) can be updated independently of any contributed packages you add.
 1. **Settings** - You probably do not need to change anything in this folder unless something goes wrong.
    1. **Local**
@@ -40,7 +40,7 @@ The reason for putting together REnPortable was to have a complete, portable R e
    1. **Roaming**
        - **R** - For rsconnect. Copied to your profile under `\Users\[username]\AppData\Roaming\R` when REnPortable starts and then copied back when close REnPortable closes.
        - **RStudio** - RStudio preferences. Copied to your profile under `\Users\[username]\AppData\Roaming\R` when REnPortable starts and then copied back when close REnPortable closes. The file `rstudio-prefs.json` includes the initial working directory for RStudio which is set to `\Data\RData\` in REnPortable.
-   1. **Temp** – temporary files for R/RStudio (I haven't seen anything saved there yet but who knows?).
+   1. **Temp** – Temporary files for R/RStudio (I haven't seen anything saved there yet but who knows?).
 
 ### Other
 Various files for portability, there is no reason to edit these unless you know what you are doing.
