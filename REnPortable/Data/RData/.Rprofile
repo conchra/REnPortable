@@ -1,3 +1,3 @@
-# Some setting for RStudio
 # USES UNIX (LF) END OF LINE CHARACTERS
+# BINPREF defined here.
 
