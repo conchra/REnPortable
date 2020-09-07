@@ -1,4 +1,2 @@
-
 CXX14 = g++ -std=c++1y
-CXX14FLAGS=-O3 -march=corei7 -mtune=corei7
-CXX11FLAGS=-O3 -march=corei7 -mtune=corei7
+CXX14FLAGS=-O3 -mtune=native -mmmx -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2
