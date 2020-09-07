@@ -22,7 +22,7 @@ The reason for putting together REnPortable was to have a complete, portable R e
 ## Folder structure
 ### App
 1. **AppInfo** – files for portability of REnPortable, there is no reason to edit these unless you know what you are doing.
-1. **CmdStan** - unpack CmdStan here before building.
+1. **CmdStan** - unpack [CmdStan](https://mc-stan.org/users/interfaces/cmdstan.html) here before building.
 1. **Rbase** – where to put the R(base) program files (and updated versions of R). Updated R base packages are saved here.
 1. **RStudio** – where to put the RStudio program files (and updated versions of RStudio).
 1. **Rtools** – where to put the Rtools program files (and updated versions of Rtools).
