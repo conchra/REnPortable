@@ -1,0 +1,2 @@
+Makevars is used by Rtools to build custom packages.
+Included based on: https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started

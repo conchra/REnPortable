@@ -1,2 +1,5 @@
 CmdStan files go here. 
 Download from https://mc-stan.org/
+
+You can comment out all the lines in `install-tbb.bat` because the path is 
+already set for you.
