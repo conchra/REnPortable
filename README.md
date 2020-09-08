@@ -36,6 +36,7 @@ The reason for putting together REnPortable was to have a complete, portable R e
        - **R** – R crash-handler files. Copied to your profile under `\Users\[username]\AppData\Local\R` when REnPortable starts and then copied back when close REnPortable closes.
        - **RStudio** – Contains `rstudio-desktop.json` file. Copied to your profile under `\Users\[username]\AppData\Local\RStudio` when REnPortable starts and then copied back when close REnPortable closes.
        - **RStudio-Desktop** – RStudio Desktop files. Are copied to your profile under `\Users\[username]\AppData\Local\RStudio-Desktop` when REnPortable starts and then copied back when close REnPortable closes.
+   1. **Profile** - The `.bash_history` file. If you use bash in Rtools.
    1. **Rbase** - Contains `Renviron.site` file. The file has settings for R such as the location of `HOME`, `R_HISTFILE`, `R_USER`, and `R_LIBS_USER`. This file is copied to `App\Rbase\etc` when REnPortable starts and then copied back when close REnPortable closes.
    1. **Roaming**
        - **R** - For rsconnect. Copied to your profile under `\Users\[username]\AppData\Roaming\R` when REnPortable starts and then copied back when close REnPortable closes.
