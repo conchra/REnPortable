@@ -1,0 +1,2 @@
+Temporary files for R/RStudio (I haven't seen anything saved there yet 
+but who knows?).

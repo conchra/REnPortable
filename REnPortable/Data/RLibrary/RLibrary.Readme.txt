@@ -1,0 +1,4 @@
+R packages are saved to this folder (i.e. R_LIBS_USER) to separate them from 
+the R program. If you install RStan, this is where the files will be saved 
+rather than under \App\Rbase. It means that R(base) can be updated 
+independently of any contributed packages you add.

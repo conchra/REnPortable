@@ -1,0 +1,33 @@
+You probably do not need to change anything in this folder unless 
+something goes wrong.
+
+* Local
+  - R – R crash-handler files. 
+    Copied to your profile under \Users\[username]\AppData\Local\R 
+    when REnPortable starts and then copied back when close REnPortable 
+    closes.
+  -  RStudio – Contains rstudio-desktop.json file. 
+     Copied to your profile under \Users\[username]\AppData\Local\RStudio 
+     when REnPortable starts and then copied back when close REnPortable 
+     closes.
+  -  RStudio-Desktop – RStudio Desktop files. 
+     Are copied to your profile under 
+     \Users\[username]\AppData\Local\RStudio-Desktop when REnPortable 
+     starts and then copied back when close REnPortable closes.
+
+* Profile - The .bash_history file. If you use bash in Rtools.
+
+* Rbase - Contains Renviron.site file. The file has settings for R such as the 
+          location of HOME, R_HISTFILE, R_USER, and R_LIBS_USER. This file is 
+          copied to App\Rbase\etc when REnPortable starts and then copied back 
+          when close REnPortable closes.
+
+* Roaming
+  - R - For rsconnect. 
+    Copied to your profile under \Users\[username]\AppData\Roaming\R when 
+    REnPortable starts and then copied back when close REnPortable closes.
+  - RStudio - RStudio preferences. 
+    Copied to your profile under \Users\[username]\AppData\Roaming\R when 
+    REnPortable starts and then copied back when close REnPortable closes. 
+    The file rstudio-prefs.json includes the initial working directory for 
+    RStudio which is set to \Data\RData\ in REnPortable.

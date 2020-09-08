@@ -1,0 +1,2 @@
+RStudio Desktop (Open Source) files go here. 
+Download the zipped files from https://www.rstudio.com/
