@@ -1,2 +1,6 @@
-Makevars is used by Rtools to build custom packages.
+Makevars.win is used by Rtools when building custom packages.
 Included based on: https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started
+However, the rstan package can produce errors if Makevars.win those settings 
+indicated. Therefore, as also noted on 
+https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started, it is better to 
+leave Makevars.win blank or delete the file.

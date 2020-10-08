@@ -1,4 +1,6 @@
 {
     "initial_working_directory": "",
-    "windows_terminal_shell": "win-git-bash"
+    "windows_terminal_shell": "win-cmd",
+    "save_workspace": "never",
+    "load_workspace": false
 }
