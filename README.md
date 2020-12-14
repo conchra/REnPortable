@@ -36,7 +36,7 @@ I have also added support for [CmdStan](https://mc-stan.org/users/interfaces/cmd
 1. **Rbase** – Where to put the [R(base)](https://cloud.r-project.org/) program files (and updated versions of R). Updated R base packages are also saved here.
 1. **RStudio** – Where to put the [RStudio](https://www.rstudio.com) program files (and updated versions of RStudio).
 1. **Rtools** – Where to put the [Rtools](https://cloud.r-project.org/) program files (and updated versions of Rtools). The empty folders `home`, `opt`, and `tmp` are required for Rtools to work properly.
-1. **TinyTex** - (Optional) For [TinyTex](https://yihui.org/tinytex/) files. If you install TinyTex from R/RStudio the main application files go here.
+1. **TinyTex** - (Optional) For [TinyTex](https://yihui.org/tinytex/) files. If you install TinyTex from R/RStudio (`install_tinytex(force = TRUE, dir = tinytex_root(), add_path = FALSE)`) the main application files go here.
 
 ### `REnPortable\Data` folder
 
