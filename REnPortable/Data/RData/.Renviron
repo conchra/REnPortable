@@ -1,0 +1,8 @@
+# Environment variable for Rtools
+BINPREF
+
+# Environment variables for R
+HOME
+R_HISTFILE
+R_LIBS_USER
+R_USER
