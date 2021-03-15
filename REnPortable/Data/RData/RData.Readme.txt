@@ -1,9 +1,3 @@
 The working directory\folder for R and RStudio, e.g. R_USER and HOME.
-
-The file .Rprofile includes path for
-  - CmdStan, used by the package cmdstanr (optional)
-  - R working directory, if problems with RStudio (see REnPortable.ini)
-
-The file .Renviron includes paths for
-  - BINPREF, used by Rtools
-  - HOME, R_HISTFILE, R_LIBS_USER, and R_USER, used by R 
+The file .Rprofile includes an R environment variable called "BINPREF" 
+used by Rtools.
