@@ -48,6 +48,7 @@ I have also added support for [CmdStan](https://mc-stan.org/users/interfaces/cmd
        - **RStudio** – Contains `rstudio-desktop.json` file.
        - **RStudio-Desktop** – RStudio Desktop files.
    1. **Profile** - Contains the `.bash_history` file.
+   1. **Rbase** - Contains `Renviron.site` file. The file has settings for R such as the location of `HOME`, `R_HISTFILE`, `R_USER`, and `R_LIBS_USER`. This file is copied to `App\Rbase\etc` when REnPortable starts and then moved back when close REnPortable closes.
    1. **Roaming** - Copied to `...\Users\[username]\AppData\Roaming\...`
        - **R** - For rsconnect.
        - **RStudio** - RStudio preferences. The file `rstudio-prefs.json` includes the initial working directory for RStudio which is set to `\Data\RData\` in REnPortable.
