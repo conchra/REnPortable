@@ -35,16 +35,17 @@ At a minimum, REnPortable 4.2 needs extracted copies of [R (base) 4.2+](https://
 
 1. **RData** – The working directory\folder for R and RStudio, e.g. `R_USER` and `HOME`.
 1. **RLibrary42** – Contributed R packages are saved to this folder (i.e. `R_LIBS_USER`) to separate them from the R program.
-1. **Settings** - You probably do not need to change anything in this folder unless something goes wrong. Most of the settings files and folders are copied to the user profile when REnPortable starts. When REnPortable closes, the folders and files are moved back to their original locations. This means that start and close times may be slower than for installed programs.
-   1. **Local** - Copied to `...\Users\[username]\AppData\Local\...`
+1. **Settings** – You probably do not need to change anything in this folder unless something goes wrong. Most of the settings files and folders are copied to the user profile when REnPortable starts. When REnPortable closes, the folders and files are moved back to their original locations. This means that start and close times may be slower than for installed programs.
+   1. **Local** – Copied to `...\Users\[username]\AppData\Local\...`
        - **R** – R crash-handler files.
        - **RStudio** – General RStudio files.
        - **RStudio-Desktop** – RStudio Desktop files.
-   1. **Profile** - Contains the `.bash_history` file.
-   1. **Rbase42** - Contains `Renviron.site` file. The file has settings for R such as the location of `HOME`, `R_HISTFILE`, `R_USER`, and `R_LIBS_USER`. This file is copied to `App\Rbase\etc` when REnPortable starts and then moved back when close REnPortable closes.
-   1. **Roaming** - Copied to `...\Users\[username]\AppData\Roaming\...`
+   1. **Profile** – Contains the `.bash_history` file.
+   1. **Rbase42** – Contains `Renviron.site` file. The file has settings for R such as the location of `HOME`, `R_HISTFILE`, `R_USER`, and `R_LIBS_USER`. This file is copied to `App\Rbase\etc` when REnPortable starts and then moved back when close REnPortable closes.
+   1. **Roaming** – Copied to `...\Users\[username]\AppData\Roaming\...`
        - **R** - For rsconnect.
-       - **RStudio** - RStudio preferences. The file `rstudio-prefs.json` includes the initial working directory for RStudio which is set to `\Data\RData\` in REnPortable.
+       - **RStudio** – RStudio preferences. The file `rstudio-prefs.json` includes the initial working directory for RStudio which is set to `\Data\RData\` in REnPortable.
+    1. **TinyTex** – texmf config file.
 1. **Temp** – Required for temporary files for R/RStudio (I haven't seen anything saved there yet but who knows?).
 
 ### `REnPortable\Other` folder
