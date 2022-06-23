@@ -1,2 +1,2 @@
-R (base x64) files go here. 
+R 4.2.x files go here. 
 Download from https://cloud.r-project.org/

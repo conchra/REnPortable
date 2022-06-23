@@ -1,0 +1,13 @@
+# R environment variables for R base
+HOME=
+HOMEDRIVE=
+HOMEPATH=
+R_HISTFILE=
+R_HOME=
+R_LIBS_SITE=
+R_LIBS_USER=
+R_USER=
+
+# R environment variables for Rtools
+R_CUSTOM_TOOLS_SOFT=
+R_CUSTOM_TOOLS_PATH=

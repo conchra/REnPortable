@@ -1,3 +1,2 @@
-The working directory\folder for R and RStudio, e.g. R_USER and HOME.
-The file .Rprofile includes an R environment variable called "BINPREF" 
-used by Rtools.
+The working directory for R (all versions) and RStudio.
+

@@ -1,4 +1,4 @@
 The files in this folder are necessary for the portable application to
-function. There is normally no need to directly access or alter any of the
+function. Usually, there is no need to directly access or alter any of the
 files within these folders once you have added or updated the application files.
 

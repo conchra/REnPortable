@@ -1,4 +1,0 @@
-PortableGit files go here. 
-Download from https://github.com/git-for-windows/git/
-
-The path to \bin and \cmd is already set for you.

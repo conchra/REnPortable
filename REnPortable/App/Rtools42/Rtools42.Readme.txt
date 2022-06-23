@@ -1,0 +1,4 @@
+Rtools 4.2 files go here. 
+Download from https://cloud.r-project.org/
+
+Include any empty folders for Rtools to work properly.

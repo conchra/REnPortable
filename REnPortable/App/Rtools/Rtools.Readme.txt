@@ -1,4 +1,0 @@
-Rtools files go here. 
-Download from https://cloud.r-project.org/
-
-The empty folders home, opt, and tmp are required for Rtools to work properly.
