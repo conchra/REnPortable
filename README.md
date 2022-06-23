@@ -10,7 +10,7 @@ At a minimum, REnPortable 4.2 needs extracted copies of [R (base) 4.2+](https://
 
 ## Getting started
 
-1. The extracted size of R and RStudio is approximately 800 MB. When you include Rtools42 (~3.9 GB), CmdStan (~1.0 GB), and TinyYex (~270 to 525 MB) altogether this is approximately 6.2 GB. You will want to add R packages and you will need room for these too. For example, my R packages library is currently ~900 MB.
+1. The extracted size of R and RStudio is approximately 800 MB. When you include Rtools42 (~3.9 GB), CmdStan (~1.0 GB), and TinyTex (~270 to 525 MB) altogether this is approximately 6.2 GB. You will want to add R packages and you will need room for these too. For example, my R packages library is currently ~900 MB.
 1. You can download the [REnPortable zip file](https://github.com/conchra/REnPortable/releases/) and unzip to any place on a Windows machine, USB, or external drive.
 1. If you have installed current versions of the various programs, you can copy the files for each into the appropriate folders in the Apps directory (see Folder structure below).
 1. If you have not installed the programs, you will need to install them, copy the program files to the correct folders in REnPortable and then uninstall the programs. RStudio Desktop can be downloaded as a zip file and unzipped into the appropriate RStudio folder.
@@ -29,7 +29,7 @@ At a minimum, REnPortable 4.2 needs extracted copies of [R (base) 4.2+](https://
 1. **Rbase42** – Where to put the [R(base)](https://cloud.r-project.org/) program files (and updated versions of R). Updated R base packages are also saved here.
 1. **RStudio** – Where to put the [RStudio](https://www.rstudio.com) program files (and updated versions of RStudio).
 1. **Rtools42** – (Optional) Where to put the [Rtools42](https://cloud.r-project.org/) program files (and updated versions of Rtools42).
-1. **TinyTex** – (Optional) For [TinyTex](https://yihui.org/tinytex/) files. If you install TinyTex from R/RStudio (`install_tinytex(force = TRUE, dir = tinytex_root(), add_path = FALSE)`) the main application files will go here.
+1. **TinyTex** – (Optional) For [TinyTex](https://yihui.org/tinytex/) files. If you install TinyTex from the `tinytex` package in R/RStudio (`install_tinytex(force = TRUE, dir = tinytex_root(), add_path = FALSE)`) the main application files will go here.
 
 ### `REnPortable\Data` folder
 
