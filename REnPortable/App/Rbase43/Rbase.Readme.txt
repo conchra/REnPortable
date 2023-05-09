@@ -1,2 +1,2 @@
-R 4.2.x files go here. 
+R program files go here. 
 Download from https://cloud.r-project.org/
