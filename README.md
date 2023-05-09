@@ -45,7 +45,7 @@ At a minimum, REnPortable 4.2 needs extracted copies of [R (base) 4.2+](https://
    1. **Roaming** – Copied to `...\Users\[username]\AppData\Roaming\...`
        - **R** - For rsconnect.
        - **RStudio** – RStudio preferences. The file `rstudio-prefs.json` includes the initial working directory for RStudio which is set to `\Data\RData\` in REnPortable.
-   1. **RStudioProfile** – RStudio uses Electron and this is the profile folder.
+   1. **RStudioProfile** – RStudio uses Electron and this is the profile folder. The file `config.json` has the path to `R.exe`, the main R executable.
    1. **TinyTex** – Contains the `texmf.cnf` file.
 1. **Temp** – Required for temporary files for R/RStudio (I haven't seen anything saved there yet but who knows?).
 
