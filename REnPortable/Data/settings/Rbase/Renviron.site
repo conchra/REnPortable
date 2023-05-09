@@ -9,5 +9,3 @@ R_LIBS_USER=
 R_USER=
 
 # R environment variables for Rtools
-R_CUSTOM_TOOLS_SOFT=
-R_CUSTOM_TOOLS_PATH=

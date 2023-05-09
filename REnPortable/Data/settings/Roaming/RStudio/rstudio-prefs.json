@@ -1,5 +1,10 @@
 {
-    "initial_working_directory": "~",
+    "initial_working_directory": "",
+    "pdf_previewer": "none",
+    "spelling_dictionary_language": "",
+    "windows_terminal_shell": "",
+    "terminal_initial_directory": "current",
     "load_workspace": false,
-    "save_workspace": "always"
+    "save_workspace": "never",
+    "remove_history_duplicates": true
 }
