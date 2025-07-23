@@ -1,4 +1,4 @@
 Portable Git files go here. 
-Download from https://github.com/git-for-windows/
+Download from https://github.com/git-for-windows/git/releases
 
-Alternatively, use Rtools42 for Git.
+Alternatively, use Rtools for Git.
