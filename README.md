@@ -6,7 +6,7 @@ A portable R environment for Windows.
 
 REnPortable is a portable **64-bit only** R environment for Windows. It was put together using the [PortableApps.com](https://portableapps.com) launcher but is not endorsed by and does not fully comply with all PortableApps.com requirements.
 
-At a minimum, REnPortable 4.5 needs extracted copies of [R (base) 4.5+](https://cloud.r-project.org/) and [RStudio Desktop 2025+](https://www.rstudio.com/). Optionally, you can include copies of [TinyTex](https://yihui.org/tinytex/), [Rtools45](https://cloud.r-project.org/), and [CmdStan 2.36+](https://mc-stan.org/). REnPortable was tested on Windows 11 Pro (x64). No support is offered for any of these programs; please use the relevant program's support pages. 
+At a minimum, REnPortable 4.5 needs extracted copies of [R (base) 4.5+](https://cloud.r-project.org/) and [RStudio Desktop 2025+](https://www.rstudio.com/). Optionally, you can include copies of [TinyTex](https://yihui.org/tinytex/), [Rtools45](https://cloud.r-project.org/), [CmdStan 2.36+](https://mc-stan.org/), and [PortableGit](https://github.com/git-for-windows/git). REnPortable was tested on Windows 11 Pro (x64). No support is offered for any of these programs; please use the relevant program's support pages. 
 
 ## Getting started
 
@@ -22,12 +22,13 @@ At a minimum, REnPortable 4.5 needs extracted copies of [R (base) 4.5+](https://
 
 ## Folder structure
 
-The R, Rtools, and RLibrary folders are named with the R version number appended because sometimes you might want to have access to and be able to run more than one version of R, Rtools, and the associated library of packages.
+The R, Rtools, and RLibrary folders are named with R's major and minor version number (e.g. `45` for version 4.5) appended because sometimes you may want to have access to and be able to run more than one version of R, Rtools, and associated packages in the library.
 
 ### `REnPortable\App` folder
 
 1. **AppInfo** – Files for portability of REnPortable, there is no reason to edit these unless you know what you are doing.
-1. **CmdStan** - (Optional) Unpack [CmdStan](https://mc-stan.org/users/interfaces/cmdstan.html) here before building. You can comment out all the lines in `\CmdStan\install-tbb.bat` because the path is already set for you.
+1. **CmdStan** – (Optional) Unpack [CmdStan](https://mc-stan.org/users/interfaces/cmdstan.html) here before building. You can comment out all the lines in `\CmdStan\install-tbb.bat` because the path is already set for you.
+1. **PortableGit** – (Optional) Where to put the [PortableGit](https://github.com/git-for-windows/git) files.
 1. **Rbase45** – Where to put the [R(base)](https://cloud.r-project.org/) program files (and updated versions of R). Updated R base packages are also saved here.
 1. **RStudio** – Where to put the [RStudio](https://www.rstudio.com) program files (and updated versions of RStudio).
 1. **Rtools45** – (Optional) Where to put the [Rtools45](https://cloud.r-project.org/) program files (and updated versions of Rtools42).
